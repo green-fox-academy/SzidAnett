@@ -23,13 +23,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.HumptyDumpty">
+  <component name="RunManager" selected="Application.HelloOthers">
     <configuration name="HelloMe" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello_Me.HelloMe" />
       <module name="Expressions_and_control_flow" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Hello_Me.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloOthers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hello_Others.HelloOthers" />
+      <module name="Expressions_and_control_flow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Hello_Others.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,9 +77,11 @@
       <item itemvalue="Application.HelloMe" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.HumptyDumpty" />
+      <item itemvalue="Application.HelloOthers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloOthers" />
         <item itemvalue="Application.HumptyDumpty" />
       </list>
     </recent_temporary>
@@ -81,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590063964156</updated>
-      <workItem from="1590063965513" duration="2574000" />
+      <workItem from="1590063965513" duration="2995000" />
     </task>
     <servers />
   </component>
@@ -89,22 +104,22 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1590066449713">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1590066646785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/390.-1080.1920.1040@0.0.1536.824" timestamp="1590066449713" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1590066449712">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/390.-1080.1920.1040@0.0.1536.824" timestamp="1590066646785" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1590066646785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/390.-1080.1920.1040@0.0.1536.824" timestamp="1590066449712" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1590066449712">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/390.-1080.1920.1040@0.0.1536.824" timestamp="1590066646785" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1590066646785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/390.-1080.1920.1040@0.0.1536.824" timestamp="1590066449712" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1590066449713">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/390.-1080.1920.1040@0.0.1536.824" timestamp="1590066646785" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1590066646785">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/390.-1080.1920.1040@0.0.1536.824" timestamp="1590066449713" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/390.-1080.1920.1040@0.0.1536.824" timestamp="1590066646785" />
     <state x="561" y="271" key="scopes" timestamp="1590064065514">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
