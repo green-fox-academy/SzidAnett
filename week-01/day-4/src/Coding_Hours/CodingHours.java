@@ -14,7 +14,7 @@ public class CodingHours {
 
         System.out.println("Percentage of the coding hours: " + ((float) a / b * 100) + "%");
 
-        
+
 
     }
 }
