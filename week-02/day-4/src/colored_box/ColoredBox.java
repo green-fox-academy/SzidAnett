@@ -1,12 +1,10 @@
-package line_in_the_middle;
+package colored_box;
 import javax.swing.*;
 import java.awt.*;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
-public class LineInTheMiddle {
+public class ColoredBox {
     public static void mainDraw(Graphics graphics) {
-        // draw a red horizontal line to the canvas' middle.
-        // draw a green vertical line to the canvas' middle.
-
+        // Draw a box that has different colored lines on each edge.
     }
     // Don't touch the code below
     static int WIDTH = 320;
@@ -22,21 +20,29 @@ public class LineInTheMiddle {
         jFrame.setVisible(true);
         jFrame.pack();
     }
-
     static class ImagePanel extends JPanel {
         @Override
         protected void paintComponent(Graphics graphics) {
             super.paintComponent(graphics);
             mainDraw(graphics);
-            this.setBackground(Color.WHITE);
 
-            graphics.setColor(Color.RED);
-            graphics.drawLine(0,160,320,160);
+            Graphics2D g2 = (Graphics2D) graphics;
+            g2.setStroke(new BasicStroke(3));
 
+            // top
             graphics.setColor(Color.BLUE);
-            graphics.drawLine(160,0,160,320);
-
+            graphics.drawLine(50, 50, 100, 50);
+            // right
+            graphics.setColor(Color.RED);
+            graphics.drawLine(100, 50, 100, 100);
+            // bottom
+            graphics.setColor(Color.ORANGE);
+            graphics.drawLine(100, 100, 50, 100);
+            // left
+            graphics.setColor(Color.MAGENTA);
+            graphics.drawLine(50, 100, 50, 50);
         }
     }
 }
+
 
