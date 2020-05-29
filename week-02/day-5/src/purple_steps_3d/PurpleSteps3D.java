@@ -1,11 +1,29 @@
-package purple_steps;
+package purple_steps_3d;
 import javax.swing.*;
 import java.awt.*;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
-public class PurpleSteps {
+public class PurpleSteps3D {
     public static void mainDraw(Graphics graphics) {
-            }
+        int width =10;
+        int x = width;
+        int max = 320/width;
+        do {
 
+            drawRect(x,width,graphics);
+            x+=width;
+            //width*=2;
+            width+=10;
+
+        } while (x+width<320*4/5);
+    }
+
+    public static void drawRect(int x, int width, Graphics graphics){
+
+        graphics.setColor(Color.MAGENTA);
+        graphics.fillRect(x,x,width,width);
+        graphics.setColor(Color.BLACK);
+        graphics.drawRect(x,x,width,width);
+    }
     // Don't touch the code below
     static int WIDTH = 320;
     static int HEIGHT = 320;
@@ -26,31 +44,7 @@ public class PurpleSteps {
         protected void paintComponent(Graphics graphics) {
             super.paintComponent(graphics);
             mainDraw(graphics);
-
-            //Graphics2D g2 = (Graphics2D) graphics;
-            //g2.setStroke(new BasicStroke(3));
-
-            int width =10;
-            int max = 320/width;
-            for (int i = 1; i < max/3*2; i++) {
-
-                int x = i*width;
-
-                drawRect(x,width,graphics);
-
-            }
         }
-
-        public static void drawRect(int x, int width, Graphics graphics){
-
-            graphics.setColor(Color.MAGENTA);
-            graphics.fillRect(x,x,width,width);
-            graphics.setColor(Color.BLACK);
-            graphics.drawRect(x,x,width,width);
-        }
-            }
-        }
-
-
-
+    }
+}
 
