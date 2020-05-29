@@ -1,39 +1,31 @@
-package starry_night;
+package envelope_star;
 import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
-
-public class StarryNight {
+public class EnvelopeStar {
     public static void mainDraw(Graphics graphics) {
 
 
-        for (int i = 0; i < 100; i++) {
-
-            int x = (int) (Math.random()*WIDTH);
-            int y = (int) (Math.random()*HEIGHT);
-            int width = 2;
-
-            filledRectangle(x,y,width,graphics);
-
-        }
-
-    }
-
-    public static void filledRectangle(int x, int y, int width, Graphics graphics){
-
+        int s = 10;
+        int width = WIDTH / 2;
         Random random = new Random();
 
-        for (int i = 0; i <= 320; i++){
+
+        for (int i = 0; i < width; i += s) {
             int r = random.nextInt(256);
             int g = random.nextInt(256);
             int b = random.nextInt(256);
+
+            graphics.drawLine(width, i, i + width, width);
             graphics.setColor(new Color(r, g, b));
-            graphics.fillRect(x,y,width,width);
-
-
+            graphics.drawLine(width, i, width - i, width);
+            graphics.setColor(new Color(r, g, b));
+            graphics.drawLine(width, HEIGHT - i, width - i, width);
+            graphics.setColor(new Color(r, g, b));
+            graphics.drawLine(width, HEIGHT - i, i + width, width);
+            graphics.setColor(new Color(r, g, b));
         }
 
     }
@@ -61,6 +53,10 @@ public class StarryNight {
             mainDraw(graphics);
 
             this.setBackground(Color.BLACK);
+
+
         }
     }
 }
+
+
