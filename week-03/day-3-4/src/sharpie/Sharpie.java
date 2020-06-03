@@ -3,11 +3,11 @@ package sharpie;
 public class Sharpie {
     private String color;
     private float width;
-    private float inkAmount = 100;
+    private float inkAmount;
 
-    public Sharpie(String color, float inkAmount) {
+    public Sharpie(String color, float inkAmount, float width) {
         this.color = color;
-        this.inkAmount = inkAmount;
+        this.inkAmount=100.0f;
     }
 
     public void use(){
