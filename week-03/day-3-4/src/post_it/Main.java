@@ -1,3 +1,5 @@
+package post_it;
+
 import post_it.PostIt;
 
 import static java.awt.Color.*;
@@ -14,7 +16,7 @@ public class Main {
         PostIt myPostItPink = new PostIt("PINK", "Awesome", "BLACK");
         PostIt myPostItYellow = new PostIt("YELLOW", "Superb!", "GREEN");
 
-        
+
         System.out.println(myPostItOrange.getBackgroundColor());
 
     }
