@@ -1,7 +1,5 @@
 package home_work;
 
-import com.sun.source.tree.Tree;
-
 public class HomeWork {
     public static void main(String[] args) {
         String tree1 =("");
