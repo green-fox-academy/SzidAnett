@@ -8,18 +8,12 @@ public class Animal {
         this.hunger = 50;
         this.thirst = 50;
     }
-
     public Animal(int hunger, int thirst){
 
     this.hunger = hunger;
     this.thirst = thirst;
-
 }
-
-
-    public void eat(){
-        this.hunger--;
-    }
+    public void eat(){ this.hunger--; }
     public void drink(){
         this.thirst--;
     }
@@ -28,7 +22,6 @@ public class Animal {
         this.thirst++;
         this.hunger++;
     }
-
 }
 
 
