@@ -9,11 +9,11 @@ public class Swap {
         System.out.println("Before swap: a = " + a);
         System.out.println("Before swap: b = " + b);
 
-        int x = a;
-        int y = b;
+        int temp = a;
+        a = b;
+        b = temp;
 
-        System.out.println("After swap: a = " + y);
-        System.out.println("After swap: b = " + x);
+        System.out.println("After swap: a = " + a);
+        System.out.println("After swap: b = " + b);
     }
-
 }
