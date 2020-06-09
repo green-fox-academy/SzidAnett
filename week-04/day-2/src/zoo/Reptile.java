@@ -11,22 +11,6 @@ public class Reptile extends Animal{
         this.temperature = temperature;
     }
 
-    public int getTemperature() {
-        return temperature;
-    }
-
-    public void setTemperature(int temperature) {
-        this.temperature = temperature;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     @Override
     public String breed() {
         return "laying eggs. ";

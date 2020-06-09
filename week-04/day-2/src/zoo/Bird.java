@@ -12,23 +12,6 @@ public class Bird extends Animal{
         this.makeSound = makeSound;
     }
 
-
-    public int getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
-
-    public String getMakeSound() {
-        return makeSound;
-    }
-
-    public void setMakeSound(String makeSound) {
-        this.makeSound = makeSound;
-    }
-
     @Override
     public String eat() {
         return "insects and eggs or seeds and fruits. ";

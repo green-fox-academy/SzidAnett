@@ -13,12 +13,10 @@ public abstract class Animal {
         this.territory = territory;
     }
     public String eat(){
-
         return null;
     }
 
     public String drink() {
-
         return null;
     }
 
@@ -30,23 +28,7 @@ public abstract class Animal {
         this.name = name;
     }
     public String breed(){
-
         return null;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getTerritory() {
-        return territory;
-    }
-
-    public void setTerritory(String territory) {
-        this.territory = territory;
-    }
 }
