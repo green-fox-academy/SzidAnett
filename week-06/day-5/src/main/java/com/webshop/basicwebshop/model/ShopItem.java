@@ -3,10 +3,10 @@ package com.webshop.basicwebshop.model;
 public class ShopItem {
     private String name;
     private String description;
-    private Integer price;
+    private double price;
     private Integer quantityOfStock;
 
-    public ShopItem(String name, String description, Integer price, Integer quantityOfStock) {
+    public ShopItem(String name, String description, double price, Integer quantityOfStock) {
         this.name = name;
         this.description = description;
         this.price = price;
@@ -29,11 +29,11 @@ public class ShopItem {
         this.description = description;
     }
 
-    public Integer getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

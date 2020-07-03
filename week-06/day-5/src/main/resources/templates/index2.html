@@ -13,7 +13,7 @@
 </a>
 <div class="line"></div>
 <form class="buttons">
-    <button formaction="http://localhost:8080/only-available">ONLY AVAILABLE</button>
+    <button formaction="http://localhost:8080/only-available">ONLY AVIABLE</button>
     <button formaction="http://localhost:8080/cheapest-first">CHEAPEST FIRST</button>
     <button formaction="http://localhost:8080/contains-nike">CONTAINS NIKE</button>
     <button formaction="http://localhost:8080/average-stock">AVERAGE STOCK</button>
@@ -24,20 +24,7 @@
     <input type="text" id="search" placeholder="...something like nike" name="searched">
     <button>Search</button>
 </form>
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Price</th>
-        <th>Quantity of stock</th>
-    </tr>
-    <tr th:each="item : ${shopItems}">
-        <td th:text="${item.getName()}"></td>
-        <td th:text="${item.getDescription()}"></td>
-        <td th:text="${item.getPrice()}"></td>
-        <td th:text="${item.getQuantityOfStock()}"></td>
-    </tr>
-</table>
+<p th:text="${text}"></p>
 </body>
 
 </html>
