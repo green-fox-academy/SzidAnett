@@ -1,3 +1,7 @@
+*{
+    background-color: whitesmoke;
+}
+
 body {
     padding: 5px 20px 20px 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,15 +15,15 @@ a {
 }
 
 h1 {
-    color: #1fbdd2;
-    width: 140px;
+    color: darkcyan;
+    width: 250px;
     margin-bottom: 0px;
 }
 
 .line {
     width: 100%;
     border: none;
-    border-bottom: 2px solid #1fbdd2;
+    border-bottom: 2px solid darkcyan;
     margin-bottom: 25px;
 }
 
@@ -35,7 +39,7 @@ h1 {
 }
 
 .buttons * {
-    background-color: #f1463d;
+    background-color: darkcyan;
     border: none;
     border-radius: 5px;
     font-size: 12px;
@@ -50,32 +54,34 @@ h1 {
     flex-direction: row;
     height: 40px;
     width: 100%;
-}
+   }
 
 .searchBar * {
     height: 100%;
     padding: 0;
+    color: darkcyan;
 }
 
 .searchBar input {
     width: 80%;
     margin-right: 5px;
-    border: 2px solid #f1463d;
+    border: 2px solid darkcyan;
     border-radius: 5px;
     box-sizing: border-box;
+    color: darkcyan;
 }
 
 .searchBar button {
     width: 20%;
     border: none;
     border-radius: 5px;
-    background-color: #f1463d;
+    background-color: darkcyan;
     color: white;
 }
 
 label {
     font-size: 15px;
-    color: #f1463d;
+    color: darkcyan;
 }
 
 table {
@@ -84,13 +90,16 @@ table {
 }
 
 th {
-    background-color: #69effe;
+    background-color: lightslategray;
     height: 70px;
+    color: white;
 }
 
 td {
     height: 70px;
     padding: 20px;
+    color: darkcyan;
+    font-weight: bolder;
 }
 
 td:nth-child(n+3) {
@@ -102,3 +111,4 @@ p {
     font-weight: bold;
     font-size: 26px;
 }
+

@@ -41,7 +41,7 @@ public class WebShopController {
 
     ));
 
-    @GetMapping("/items")
+    @GetMapping("/webshop")
     public String index(Model model) {                  //a Model model-t itt hívom meg
         ShopItem shopItem = new ShopItem("NUBWO Gaming headsets", "lmmersive Gaming Audio", 24, 68);
         model.addAttribute("shopItem", shopItem);       //a html egy modelt vár, itt adom meg neki, az elsővel!

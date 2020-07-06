@@ -6,6 +6,7 @@ public class ShopItem {
     private double price;
     private Integer quantityOfStock;
 
+
     public ShopItem(String name, String description, double price, Integer quantityOfStock) {
         this.name = name;
         this.description = description;
@@ -44,5 +45,8 @@ public class ShopItem {
     public void setQuantityOfStock(Integer quantityOfStock) {
         this.quantityOfStock = quantityOfStock;
     }
+
+
 }
+
 
