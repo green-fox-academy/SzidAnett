@@ -1,4 +1,4 @@
-package com.example.dependency.dependencyday.hello_bean_world.service;
+package com.example.dependency.dependencyday.service;
 
 import org.springframework.stereotype.Service;
 
