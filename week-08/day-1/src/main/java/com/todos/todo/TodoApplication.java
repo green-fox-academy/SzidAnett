@@ -15,7 +15,7 @@ public class TodoApplication {
     }
 
     @Bean
-    public CommandLineRunner todoDatabase(TodoRepository todoRepository){
+    public CommandLineRunner todoDatabase(TodoRepository todoRepository) {
         return args -> {
 
             todoRepository.save(new Todo("Start the day"));

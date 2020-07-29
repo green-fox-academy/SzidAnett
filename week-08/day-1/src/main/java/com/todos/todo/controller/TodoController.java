@@ -22,9 +22,10 @@ public class TodoController {
     }
 
     @GetMapping("/todo")
-    public String toDo(){
+    public String toDo() {
         return "index";
     }
+
     @GetMapping(value = {"/", "/list"})
     public String list(Model model) {
         Iterable<Todo> todo = todoRepository.findAll();

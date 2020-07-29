@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table
-public class Todo{
+public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -14,7 +14,7 @@ public class Todo{
 
     public Todo() {
     }
-    
+
     public Todo(String title) {
         this.title = title;
     }
@@ -34,6 +34,7 @@ public class Todo{
     public void setTitle(String title) {
         this.title = title;
     }
+
     public boolean isUrgent() {
         return urgent;
     }

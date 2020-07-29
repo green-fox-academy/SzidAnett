@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Url Shortener</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/style.css}" />
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1> Url Shortener</h1>
+<p th:text="*{message.errorText}"></p>
+<form action="/save_link" method="post">
+    <label for="Original url">Original Url</label>
+    <input id="origUrl" type="text" th:field="*{url.origUrl}"></br>
+    <label for="Alias Url">Alias Url</label>
+    <input id="aliasUrl" type="text" th:field="*{url.aliasUrl}"></br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
