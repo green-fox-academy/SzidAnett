@@ -5,7 +5,6 @@ import com.spring.advanced2.model.DAOUser;
 import com.spring.advanced2.model.UserDTO;
 import com.spring.advanced2.repository.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
